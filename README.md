@@ -1,3 +1,3 @@
 # Landing Page za vaučere
 
-[Link](https://goinfo.eu/wp/) do stranice.
+[Link](https://goinfo.eu/vauceri) do stranice.
