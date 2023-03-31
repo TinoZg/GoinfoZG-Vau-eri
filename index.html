@@ -240,6 +240,7 @@
         </ul>
         <div>
           <button
+            id="button1"
             class="btn btn-primary mb-5"
             style="background-color: #6e0270"
           >
@@ -315,6 +316,7 @@
         </ul>
         <div>
           <button
+            id="button2"
             class="btn btn-primary mb-5"
             style="background-color: #6e0270"
           >
@@ -374,6 +376,7 @@
         </p>
         <div>
           <button
+            id="button3"
             class="btn btn-primary mb-5"
             style="background-color: #6e0270"
           >
@@ -395,5 +398,40 @@
       <p class="my-0">T +385 1 3491 773</p>
       <p class="my-0 pb-5">F +385 1 3491 712</p>
     </div>
+    <script>
+      const sendEmailBtn1 = document.querySelector('#button1');
+      const sendEmailBtn2 = document.querySelector('#button2');
+      const sendEmailBtn3 = document.querySelector('#button3');
+
+      sendEmailBtn1.addEventListener('click', () => {
+        const recipient = 'marijana@goinfo.hr';
+        const subject = 'Default email subject button1';
+        const body = '';
+
+        const mailtoUrl = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+        window.location.href = mailtoUrl;
+      });
+
+      sendEmailBtn2.addEventListener('click', () => {
+        const recipient = 'marijana@goinfo.hr';
+        const subject = 'Default email subject button 2';
+        const body = '';
+
+        const mailtoUrl = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+        window.location.href = mailtoUrl;
+      });
+
+      sendEmailBtn3.addEventListener('click', () => {
+        const recipient = 'marijana@goinfo.hr';
+        const subject = 'Default email subject button3';
+        const body = '';
+
+        const mailtoUrl = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+        window.location.href = mailtoUrl;
+      });
+    </script>
   </body>
 </html>
