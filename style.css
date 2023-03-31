@@ -1,3 +1,18 @@
+p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 991.98px) {
+  .sekcija3 {
+    height: calc(100vw / 1.5);
+  }
+}
+@media (min-width: 992px) {
+  .sekcija3 {
+    height: calc(100vw / 4.5);
+  }
+}
+
 .text-container {
   position: relative;
   height: 100%;
@@ -5,24 +20,24 @@
 
 .text {
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   left: 0;
   right: 0;
   text-align: center;
-  transform: translateY(50%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .col-lg-4:hover .text {
-  transform: translateY(-250px);
+  transform: translateY(-150%);
 }
 
 .bg-image {
+  background-color: rgba(0, 0, 0, 0.4);
   transition: 0.7s ease;
 }
 
 .bg-image:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   transform: scale(1.03);
 }
 
