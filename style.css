@@ -2,6 +2,10 @@ p {
   font-size: 1.2rem;
 }
 
+li {
+  font-size: 1.1rem;
+}
+
 @media (max-width: 991.98px) {
   .sekcija3 {
     height: calc(100vw / 1.5);
